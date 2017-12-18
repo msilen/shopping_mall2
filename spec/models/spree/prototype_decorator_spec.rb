@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe Spree::Prototype do
-  it { should have_many(:properties).through(:properties_prototypes) }
-  it { should have_many(:option_types).through(:option_types_prototypes) }
+  it { should have_many(:properties).through(:property_prototypes) }
+  it { should have_many(:option_types).through(:option_type_prototypes) }
 
   context 'has_many through sanity check' do
     subject { create :prototype }

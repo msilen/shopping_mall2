@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Spree::OptionType do
-  it { should have_many(:prototypes).through(:option_types_prototypes) }
+  it { should have_many(:prototypes).through(:option_type_prototypes) }
 
   context 'has_many through sanity check' do
     it 'associates correctly' do

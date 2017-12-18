@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Spree::User do
-  it { should have_many(:roles).through(:roles_users) }
+  it { should have_many(:roles).through(:role_users) }
 
   context 'has_many through sanity check' do
     it 'associates correctly' do

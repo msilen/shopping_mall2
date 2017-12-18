@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Spree::ShippingMethod do
-  it { should have_many(:zones).through(:shipping_methods_zones) }
+  it { should have_many(:zones).through(:shipping_method_zones) }
 
   context 'has_many through sanity check' do
     it 'associates correctly' do

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Spree::Property do
-  it { should have_many(:prototypes).through(:properties_prototypes) }
+  it { should have_many(:prototypes).through(:property_prototypes) }
 
   context 'has_many through sanity check' do
     it 'associates correctly' do
