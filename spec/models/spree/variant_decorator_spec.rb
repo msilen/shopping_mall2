@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Spree::Variant do
-  it { should have_many(:option_values).through(:option_values_variants) }
+  it { should have_many(:option_values).through(:option_value_variants) }
 
   context 'has_many through sanity check' do
     it 'associates correctly' do

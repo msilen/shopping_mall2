@@ -5,13 +5,13 @@ class HatbmToHmt < ActiveRecord::Migration
 
   def tables_to_mutate
     [
-      :spree_option_types_prototypes,
-      :spree_option_values_variants,
-      :spree_orders_promotions,
-      :spree_products_promotion_rules,
-      :spree_properties_prototypes,
-      :spree_roles_users,
-      :spree_shipping_methods_zones
+      :spree_option_type_prototypes,
+      :spree_option_value_variants,
+      :spree_order_promotions,
+      :spree_product_promotion_rules,
+      :spree_property_prototypes,
+      :spree_role_users,
+      :spree_shipping_method_zones
     ]
   end
 end

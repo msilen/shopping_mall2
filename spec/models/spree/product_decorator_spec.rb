@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Spree::Product do
-  it { should have_many(:promotion_rules).through(:products_promotion_rules) }
+  it { should have_many(:promotion_rules).through(:product_promotion_rules) }
 
   context 'has_many through sanity check' do
     it 'associates correctly' do
